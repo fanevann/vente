@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion Vente Voiture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚗 Gestion Vente de Voitures</h1>
+
+<div class="form">
+    <input type="text" id="marque" placeholder="Marque">
+    <input type="text" id="modele" placeholder="Modèle">
+    <input type="number" id="prix" placeholder="Prix ($)">
+    <button onclick="ajouterVoiture()">Ajouter</button>
+</div>
+
+<div class="search">
+    <input type="text" id="recherche" placeholder="Rechercher..." onkeyup="rechercherVoiture()">
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Marque</th>
+            <th>Modèle</th>
+            <th>Prix</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="listeVoitures"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
